@@ -1,0 +1,22 @@
+<body>
+    <select id="pokemon">
+        <option>Catch one here</option>
+    </select>
+    <br><img id="display"><br>
+    <div id="output">?</div>
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            const baseURL = "https://pokeapi.co/api/v2/pokemon/";
+            const resp = await fetch(baseURL); //GET is the default method
+            const data = await resp.json(); //like JSON.parse() data from string
+            data.results.forEach(p => pokemon.appendChild(new Option(p.name)));
+
+            pokemon.addEventListener("change", async e => {
+                output.innerText = pokemon.value;
+                const resp = await fetch(baseURL + pokemon.value);
+                const data = await resp.json(); //like JSON.parse() data from string
+                display.src = data.sprites.front_default;
+            });
+        });
+    </script>
+</body>
