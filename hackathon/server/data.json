@@ -1,0 +1,23 @@
+{
+  "hackathons": [
+    {
+      "id": 123,
+      "title": "Week 10 ideas",
+      "start_date": "2024-11-23",
+      "end_date": "2024-11-24",
+      "participants": [
+        { "name": "salem", "stars": 5 },
+        { "name": "kevin", "stars": 5 }
+      ],
+      "teams": [],
+      "ideas": [
+        { "name": "argue AI", "desc": "surrogate for argument", "stars": [] },
+        { "name": "dealer", "desc": "car dealer inventory", "stars": [] },
+        { "name": "goals", "desc": "gamification of life", "stars": [] },
+        { "name": "timer", "desc": "day planner style calendar", "stars": [] },
+        { "name": "search enginer", "desc": "like google only really *not evil*", "stars": [] }
+      ],
+      "starStickers": []
+    }
+  ]
+}
